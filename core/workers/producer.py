@@ -1,7 +1,6 @@
 
 
-
-from workers import Colaborator
+from core.workers.colaborator import Colaborator
 
 
 class Producer(Colaborator):
@@ -20,6 +19,8 @@ class Junior(Producer):
 
         super().__init__(name, cost)
 
+        self.type = "produtor junior"
+
 
 class Senior(Producer):
 
@@ -27,5 +28,14 @@ class Senior(Producer):
         def __init__(self, name:str, cost:int):
     
             super().__init__(name, cost)
+
+            self.type = "produtor senior"
+
+
+if __name__ == "__main__":
+     
+    worker = Senior("Joao", 100)
+
+    print(worker)
 
 

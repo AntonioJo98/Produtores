@@ -1,0 +1,56 @@
+> Nao existem colaboradores registados.
+> Colaborador registado com sucesso!
+> actor normal o gajo comido pelo dinossauro 10
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> actor normal o gajo comido pelo dinossauro 10
+actor vedeta Sam Neill 20
+actor vedeta Laura Dern 20
+realizador vedeta Steven Spielberg 50
+realizador normal Ed Wood 100
+produtor junior Kathleen Kennedy 10
+produtor senior Gerald R. Molen 20
+actor normal Tiranossaurus Rex, o grande! 5
+tecnico Michael Crichton 10
+tecnico John Williams 20
+actor vedeta Velociraptor que metia medo 10
+> Nao existem localizacoes registadas.
+> Cenario registado.
+> Isla Nublar 100.
+> Cenario registado.
+> Cenario registado.
+> Cenario registado.
+> Localizacao ja tinha sido registada.
+> Cenario registado.
+> Acha que eles nos pagam para gravar la?
+> Localizacao ja tinha sido registada.
+> Localizacao ja tinha sido registada.
+> Localizacao ja tinha sido registada.
+> Cenario registado.
+> Isla Nublar 100.
+Universal Studios 50.
+Kualoa Ranch 20.
+Niihau 10.
+Warner Bros. Studios Stage 16 100.
+Red Rock Canyon 50.
+> Nenhuma gravacao prevista.
+> Gravacao agendada com sucesso!
+> 2018 4 16; Kualoa Ranch; Kathleen Kennedy; Steven Spielberg.
+115 euros orcamentados.
+> Gravacao agendada com sucesso!
+> Gravacao agendada com sucesso!
+> Gravacao agendada com sucesso!
+> 2018 4 16; Kualoa Ranch; Kathleen Kennedy; Steven Spielberg.
+2018 4 16; Kualoa Ranch; Kathleen Kennedy; Steven Spielberg.
+2018 4 17; Isla Nublar; Gerald R. Molen; Ed Wood.
+2018 4 18; Kualoa Ranch; Kathleen Kennedy; Steven Spielberg.
+1285 euros orcamentados.
+> Ate a proxima

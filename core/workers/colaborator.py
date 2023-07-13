@@ -1,6 +1,7 @@
 
 
 
+from core.scheduling.calendar import Calendar
 
 
 class Colaborator:
@@ -11,21 +12,25 @@ class Colaborator:
         self.name = name
         self.cost = cost
 
-        self.calendar = []
+        self.type = None
+
+        self.calendar = Calendar()
 
 
     def add_appointment(self, appointment):
 
         self.calendar.append(appointment)
 
-
-
+    
+    def __str__(self) -> str:
+        return f"{self.type} {self.name} {self.cost}"
 
 
 if __name__ == "__main__":
     worker = Colaborator("Joao", 100)
 
-
     worker.add_appointment("2020-01-01 10:00:00")
+
+    print(worker)
 
     

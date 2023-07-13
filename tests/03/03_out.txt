@@ -1,0 +1,34 @@
+> Nao existem colaboradores registados.
+> Tipo de colaborador desconhecido.
+> Colaborador registado com sucesso!
+> Ja existe um colaborador com o mesmo nome.
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Acha mesmo que este colaborador vai pagar para trabalhar?
+> Acha mesmo que este colaborador vai pagar para trabalhar?
+> Acha mesmo que este colaborador vai pagar para trabalhar?
+> Acha mesmo que este colaborador vai pagar para trabalhar?
+> Acha mesmo que este colaborador vai pagar para trabalhar?
+> Ja existe um colaborador com o mesmo nome.
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Notoriedade invalida.
+> Notoriedade invalida.
+> actor normal o gajo comido pelo dinossauro 10
+actor vedeta Sam Neill 20
+actor vedeta Laura Dern 20
+realizador vedeta Steven Spielberg 50
+realizador normal Ed Wood 100
+produtor junior Kathleen Kennedy 10
+produtor senior Gerald R. Molen 20
+actor normal Tiranossaurus Rex, o grande! 5
+tecnico Olha que Tyranossaurus Rex se escreve com y! 10
+tecnico Michael Crichton 10
+tecnico John Williams 20
+> Ate a proxima

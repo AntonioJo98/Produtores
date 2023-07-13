@@ -1,0 +1,298 @@
+regista
+actor normal 10 o gajo comido pelo dinossauro
+regista
+actor vedeta 20 Sam Neill
+regista
+actor vedeta 20 Laura Dern
+regista
+realizador vedeta 50 Steven Spielberg
+regista
+realizador normal 100 Ed Wood
+regista
+junior 10 Kathleen Kennedy
+regista
+junior 10 Christopher Nolan
+regista
+senior 20 Gerald R. Molen
+regista
+senior 50 Darla K. Anderson
+regista
+actor normal 5 Tiranossaurus Rex, o grande!
+regista
+tecnico 10 Michael Crichton
+regista
+tecnico 20 John Williams
+regista
+actor vedeta 10 Velociraptor que metia medo
+cenario
+Isla Nublar
+100
+cenario
+Universal Studios
+50
+cenario
+Kualoa Ranch
+20
+cenario
+Niihau
+10
+cenario
+Warner Bros. Studios Stage 16
+100
+cenario
+Red Rock Canyon
+50
+previstas
+realizadas
+marca
+Westeros
+2018 04 16 10 10 59
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+0
+marca
+Kualoa Ranch
+2018 04 16 10 10 59
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+2
+John Williams
+Tiranossaurus Rex, o grande!
+marca
+Kualoa Ranch
+2018 04 16 15 00 150
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+1
+Tiranossaurus Rex, o grande!
+marca
+Isla Nublar
+2018 04 17 18 53 121
+Gerald R. Molen
+Ed Wood
+Michael Crichton
+0
+marca
+Kualoa Ranch
+2018 04 18 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+John Williams
+Sam Neill
+Tiranossaurus Rex, o grande!
+previstas
+realizadas
+reconcilia
+Gregor McIntosh
+Sam Neill
+amua
+Steven Spielberg
+John Williams
+reconcilia
+John Williams
+Steven Spielberg
+reconcilia
+Laura Dern
+Sam Neill
+amua
+Steven Spielberg
+Michael Crichton
+reconcilia
+Steven Spielberg
+John Williams
+grava
+marca
+Isla Nubar
+2018 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+0
+marca
+Isla Nublar
+2018 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+0
+marca
+Isla Nublar
+2019 04 08 10 10 -60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kenedy
+Steven Spielberg
+Michael Crichton
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Ed Wood
+Steven Spielberg
+Michael Crichton
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spillberg
+Michael Crichton
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+o gajo comido pelo dinossauro
+Michael Crichton
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton II
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Laura Dern
+0
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+o tipo que nao entrou no filme
+o gajo comido pelo dinossauro
+Velociraptor que metia medo
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+o gajo comido pelo dinossauro
+Velociraptor que metia medo
+o tipo que nao entrou no filme
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton II
+3
+Velociraptor que metia medo
+o tipo que nao entrou no filme
+o gajo comido pelo dinossauro
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+Velociraptor que metia medo
+o tipo que nao entrou no filme
+o gajo comido pelo dinossauro
+marca
+Isla Nublar
+2019 04 08 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+Velociraptor que metia medo
+Laura Dern
+o gajo comido pelo dinossauro
+reconcilia
+Steven Spielberg
+Michael Crichton
+amua
+Steven Spielberg
+Sam Neill
+reconcilia
+Sam Neill
+Steven Spielberg
+reconcilia
+Steven Spielberg
+Sam Neill
+amua
+Steven Spielberg
+Sam Neill
+amua
+Steven Spielberg
+Ed Wood
+reconcilia
+Steven Spielberg
+Ed Wood
+amua
+Sam Neill
+Michael Crichton
+previstas
+marca
+Isla Nublar
+2018 04 17 18 50 120
+Darla K. Anderson
+Ed Wood
+Michael Crichton
+0
+marca
+Universal Studios
+2018 04 17 18 50 120
+Darla K. Anderson
+Ed Wood
+John Williams
+0
+marca
+Universal Studios
+2018 04 17 18 50 120
+Darla K. Anderson
+Steven Spielberg
+Michael Crichton
+0
+marca
+Universal Studios
+2018 04 17 18 50 120
+Darla K. Anderson
+Steven Spielberg
+John Williams
+1
+Michael Crichton
+marca
+Isla Nublar
+2018 04 17 18 50 120
+Darla K. Anderson
+Ed Wood
+Michael Crichton
+0
+marca
+Kualoa Ranch
+2018 04 18 10 10 60
+Christopher Nolan
+Steven Spielberg
+Michael Crichton
+1
+Darla K. Anderson
+grava
+previstas
+realizadas
+grava
+grava
+previstas
+realizadas
+sai

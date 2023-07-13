@@ -1,0 +1,130 @@
+regista
+actor normal 10 o gajo comido pelo dinossauro
+regista
+actor vedeta 20 Sam Neill
+regista
+actor vedeta 20 Laura Dern
+regista
+realizador vedeta 50 Steven Spielberg
+regista
+realizador normal 100 Ed Wood
+regista
+junior 10 Kathleen Kennedy
+regista
+senior 20 Gerald R. Molen
+regista
+actor normal 5 Tiranossaurus Rex, o grande!
+regista
+tecnico 10 Michael Crichton
+regista
+tecnico 20 John Williams
+regista
+actor vedeta 10 Velociraptor que metia medo
+cenario
+Isla Nublar
+100
+cenario
+Universal Studios
+50
+cenario
+Kualoa Ranch
+20
+cenario
+Niihau
+10
+cenario
+Warner Bros. Studios Stage 16
+100
+cenario
+Red Rock Canyon
+50
+previstas
+realizadas
+marca
+Kualoa Ranch
+2018 04 16 10 10 59
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+2
+John Williams
+Tiranossaurus Rex, o grande!
+marca
+Kualoa Ranch
+2018 04 16 15 00 150
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+1
+Tiranossaurus Rex, o grande!
+marca
+Isla Nublar
+2018 04 17 18 53 121
+Gerald R. Molen
+Ed Wood
+Michael Crichton
+0
+marca
+Kualoa Ranch
+2018 04 18 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+John Williams
+Sam Neill
+Tiranossaurus Rex, o grande!
+previstas
+realizadas
+reconcilia
+Gregor McIntosh
+Sam Neill
+amua
+Steven Spielberg
+John Williams
+reconcilia
+John Williams
+Steven Spielberg
+reconcilia
+Laura Dern
+Sam Neill
+amua
+Steven Spielberg
+Michael Crichton
+reconcilia
+Steven Spielberg
+John Williams
+grava
+reconcilia
+Steven Spielberg
+Michael Crichton
+amua
+Steven Spielberg
+Sam Neill
+reconcilia
+Sam Neill
+Steven Spielberg
+reconcilia
+Steven Spielberg
+Sam Neill
+amua
+Steven Spielberg
+Sam Neill
+amua
+Steven Spielberg
+Ed Wood
+reconcilia
+Steven Spielberg
+Ed Wood
+amua
+Sam Neill
+Michael Crichton
+previstas
+grava
+previstas
+realizadas
+grava
+grava
+previstas
+realizadas
+sai

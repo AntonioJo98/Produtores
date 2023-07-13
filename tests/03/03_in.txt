@@ -1,0 +1,45 @@
+staff
+regista
+catering 10 Veggie Saurs
+regista
+actor normal 10 o gajo comido pelo dinossauro
+regista
+junior 20 o gajo comido pelo dinossauro
+regista
+actor vedeta 20 Sam Neill
+regista
+actor vedeta 20 Laura Dern
+regista
+realizador vedeta 50 Steven Spielberg
+regista
+realizador normal 100 Ed Wood
+regista
+junior 10 Kathleen Kennedy
+regista
+senior 20 Gerald R. Molen
+regista
+actor normal 5 Tiranossaurus Rex, o grande!
+regista
+tecnico 10 Olha que Tyranossaurus Rex se escreve com y!
+regista
+junior -1 forreta
+regista
+senior -1 forreta II
+regista
+actor normal -10 forreta III
+regista
+actor vedeta -120 forreta III
+regista
+tecnico -12 forreta IV
+regista
+actor banal 20 Sam Neill
+regista
+tecnico 10 Michael Crichton
+regista
+tecnico 20 John Williams
+regista
+actor genial 10 Velociraptor que metia medo
+regista
+realizador brutal 20 Martin Scorcese
+staff
+sai

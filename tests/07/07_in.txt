@@ -1,0 +1,97 @@
+staff
+regista
+actor normal 10 o gajo comido pelo dinossauro
+staff
+regista
+actor vedeta 20 Sam Neill
+regista
+actor vedeta 20 Laura Dern
+regista
+realizador vedeta 50 Steven Spielberg
+regista
+realizador normal 100 Ed Wood
+regista
+junior 10 Kathleen Kennedy
+regista
+senior 20 Gerald R. Molen
+regista
+actor normal 5 Tiranossaurus Rex, o grande!
+regista
+tecnico 10 Michael Crichton
+regista
+tecnico 20 John Williams
+regista
+actor vedeta 10 Velociraptor que metia medo
+staff
+cenarios
+cenario
+Isla Nublar
+100
+cenarios
+cenario
+Universal Studios
+50
+cenario
+Kualoa Ranch
+20
+cenario
+Niihau
+10
+cenario
+Warner Bros. Studios Stage 16
+100
+cenario
+Red Rock Canyon
+50
+cenarios
+previstas
+realizadas
+marca
+Kualoa Ranch
+2018 04 16 10 10 59
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+2
+John Williams
+Tiranossaurus Rex, o grande!
+previstas
+marca
+Kualoa Ranch
+2018 04 16 15 00 150
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+2
+John Williams
+Tiranossaurus Rex, o grande!
+marca
+Isla Nublar
+2018 04 17 18 53 121
+Gerald R. Molen
+Ed Wood
+Michael Crichton
+0
+marca
+Kualoa Ranch
+2018 04 18 10 10 60
+Kathleen Kennedy
+Steven Spielberg
+Michael Crichton
+3
+John Williams
+Sam Neill
+Tiranossaurus Rex, o grande!
+previstas
+realizadas
+grava
+previstas
+realizadas
+grava
+grava
+previstas
+realizadas
+grava
+previstas
+realizadas
+sai

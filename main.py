@@ -2,10 +2,11 @@
 from typing import List
 from core import app
 import sys
+import datetime
 
 DIRECTOR = "realizador"
 
-def help():
+def help() -> str:
 
     return f"""regista - regista um novo colaborador
 staff - lista os colaboradores registados
@@ -24,42 +25,93 @@ ajuda - Mostra a ajuda
 sai - Termina a execucao do programa"""
 
 
-def register():
+def register() -> None:
+    """
+    regista - regista um novo colaborador
+
+    regista\n <tipo> <vedeta> <custo> <nome>
+
+
+    """
 
     worker_info:str = input()
-
     info:List[str] = worker_info.split(" ")
+    info_idx = 0
 
     try:
-
-        type_worker = info[0].lower()
+        type_worker = info[info_idx].lower()
+        info_idx += 1
 
         if type_worker == "actor" or type_worker == DIRECTOR:
             # info = ["actor", "vedeta", "custo", "nome"]
             eww = info[1].lower()
-            info_idx = 2
-
-            if eww != "vedeta" and eww != "normal":
-                raise ValueError(f"Tipo de vedeta desconhecido.")
+            info_idx += 1
         else:
             # info = ["tecnico", "custo", "nome1", "nome2", ..., "nomek"]
             eww = None
 
-            info_idx = 1
-
         cost = int(info[info_idx])
         info_idx += 1
 
-        name = " ".join(info[info_idx:])
+        name = " ".join(info[info_idx:]) # nome = "nome1 nome2 ... nomek"
 
-        topo.register_worker(type_worker, eww == "vedeta", name, cost)
+        topo.check_worker(type_worker, eww, name, cost)
 
+        topo.register_worker(type_worker, eww, name, cost)
+        print("> Colaborador registado com sucesso!")
     except ValueError as e:
-        print(e)
+        print(f"> {e}")
 
 
+def staff() -> str:
+    """
+    staff - lista os colaboradores registados
 
+    """
+
+    return topo.print_staff()
     
+
+def register_stage():
+    stage_name = input("")
+    stage_price = int(input(""))
+    try:
+        topo.check_stage(stage_name, stage_price)
+        topo.register_stage(stage_name, stage_price)
+        print("> Cenario registado.")
+    except ValueError as e:    
+        print(f"> {e}")
+    
+
+def stages():
+    return topo.print_stages()
+
+
+def schedule():
+
+    stage_name = input("")
+    time = input("").split(" ")
+    duration = int(time[-1])
+    time = " ".join(time[:-1])
+    time += " 00"
+    date = datetime.datetime.strptime(time, '%Y %m %d %H %M %S')
+    
+    producer_name = input("")
+    director_name = input("")
+    tech_name = input("")
+
+    n_colab = int(input(""))
+    colabs = []
+    for _ in range(n_colab):
+        colab = input("")
+        colabs.append(colab)
+    try:
+        topo.check_event(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
+        topo.schedule(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
+        print("> Gravacao agendada com sucesso!")
+    except ValueError as e:
+        print(f"> {e}")
+
 
 
 def resolve_cmd(cmd:str):
@@ -67,23 +119,30 @@ def resolve_cmd(cmd:str):
     cmd = cmd.lower()
 
     if cmd == "sai":
-        sys.exit("Ate a proxima.")
+        print("> Ate a proxima")
+        sys.exit(0)
     elif cmd == "ajuda":
-        print(help())
+        print("> " + help())
     elif cmd == "regista":
         register()
+    elif cmd == "staff":
+        print("> " + staff())
+    elif cmd == "cenario":
+        register_stage()
+    elif cmd == "cenarios":
+        print("> " + stages())
+    elif cmd == 'marca':
+        schedule()
     else:
-       raise ValueError(f"Opcao inexistente.")
+       print("Opcao inexistente.")
 
 
 if __name__ == "__main__":
 
     topo = app.Application()
 
-    cmd = input("Comando: ")
-
     while True:
-
+        cmd = input()
         resolve_cmd(cmd)
 
     

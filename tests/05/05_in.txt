@@ -1,0 +1,37 @@
+cenarios
+cenario
+Isla Nublar
+100
+cenarios
+cenario
+Universal Studios
+50
+cenario
+Kualoa Ranch
+20
+cenario
+Niihau
+10
+cenario
+Isla Nublar
+200
+cenario
+Warner Bros. Studios Stage 16
+100
+cenario
+Haiku
+-20
+cenario
+Niihau
+100
+cenario
+Kualoa Ranch
+2
+cenario
+Universal Studios
+50
+cenario
+Red Rock Canyon
+50
+cenarios
+sai

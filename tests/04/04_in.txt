@@ -1,0 +1,16 @@
+cenarios
+cenario
+Isla Nublar
+100
+cenarios
+cenario
+Universal Studios
+50
+cenario
+Kualoa Ranch
+20
+cenario
+Niihau
+10 
+cenarios
+sai

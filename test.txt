@@ -1,0 +1,34 @@
+regista
+senior 100 Max Bialystock
+regista
+junior 50 Leo Bloom
+regista
+actor vedeta 80 Ulla Inga Hansen Benson Yansen Tallen Hallen Svaden Swanson
+regista
+tecnico 10 Carmen Ghia
+regista
+realizador normal 40 Roger De Bris
+regista
+tecnico 200 Mel Brooks
+cenario
+Pantages Theatre
+100
+marca
+Pantages Theatre
+2018 03 26 10 20 68
+Leo Bloom
+Roger De Bris
+Carmen Ghia
+3
+Ulla Inga Hansen Benson Yansen Tallen Hallen Svaden Swanson
+Mel Brooks
+Max Bialystock
+
+
+marca
+Pantages Theatre
+2018 03 26 10 30 120
+Donald P. Bellisario
+Russ Abbot
+James Dreyfus
+0

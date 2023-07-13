@@ -1,0 +1,46 @@
+> regista - regista um novo colaborador
+staff - lista os colaboradores registados
+cenario - regista um novo local para gravacoes
+cenarios - lista os locais para gravacoes registados
+marca - marca uma nova gravacao
+amua - vedeta deixa de trabalhar com colaborador
+reconcilia - vedeta faz as pazes com colaborador
+realizadas - lista as gravacoes realizadas
+previstas - lista as gravacoes previstas
+local - lista as gravacoes previstas para um local
+colaborador - lista as gravacoes previstas para um colaborador
+grava - executa a proxima gravacao agendada
+amuancos - lista os colaboradores com quem uma vedeta esta amuada
+ajuda - Mostra a ajuda
+sai - Termina a execucao do programa
+> regista - regista um novo colaborador
+staff - lista os colaboradores registados
+cenario - regista um novo local para gravacoes
+cenarios - lista os locais para gravacoes registados
+marca - marca uma nova gravacao
+amua - vedeta deixa de trabalhar com colaborador
+reconcilia - vedeta faz as pazes com colaborador
+realizadas - lista as gravacoes realizadas
+previstas - lista as gravacoes previstas
+local - lista as gravacoes previstas para um local
+colaborador - lista as gravacoes previstas para um colaborador
+grava - executa a proxima gravacao agendada
+amuancos - lista os colaboradores com quem uma vedeta esta amuada
+ajuda - Mostra a ajuda
+sai - Termina a execucao do programa
+> regista - regista um novo colaborador
+staff - lista os colaboradores registados
+cenario - regista um novo local para gravacoes
+cenarios - lista os locais para gravacoes registados
+marca - marca uma nova gravacao
+amua - vedeta deixa de trabalhar com colaborador
+reconcilia - vedeta faz as pazes com colaborador
+realizadas - lista as gravacoes realizadas
+previstas - lista as gravacoes previstas
+local - lista as gravacoes previstas para um local
+colaborador - lista as gravacoes previstas para um colaborador
+grava - executa a proxima gravacao agendada
+amuancos - lista os colaboradores com quem uma vedeta esta amuada
+ajuda - Mostra a ajuda
+sai - Termina a execucao do programa
+> Ate a proxima

@@ -1,0 +1,25 @@
+> Nao existem colaboradores registados.
+> Colaborador registado com sucesso!
+> actor normal o gajo comido pelo dinossauro 10
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> Colaborador registado com sucesso!
+> actor normal o gajo comido pelo dinossauro 10
+actor vedeta Sam Neill 20
+actor vedeta Laura Dern 20
+realizador vedeta Steven Spielberg 50
+realizador normal Ed Wood 100
+produtor junior Kathleen Kennedy 10
+produtor senior Gerald R. Molen 20
+actor normal Tiranossaurus Rex, o grande! 5
+tecnico Michael Crichton 10
+tecnico John Williams 20
+actor vedeta Velociraptor que metia medo 10
+> Ate a proxima
