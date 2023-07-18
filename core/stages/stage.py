@@ -15,5 +15,9 @@ class Stage:
 
         self.calendar = Calendar()
 
+
+    def get_cost(self) -> int:
+        return self.cost
+
     def __str__(self) -> str:
         return f"{self.name} {self.cost}."

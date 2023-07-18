@@ -15,6 +15,12 @@ class Vedeta(Colaborator):
 
         self.burnbook = []
 
+    def burn(self, name:str) -> None:
+        self.burnbook.append(name)
+
+    def hug(self, name:str) -> None:
+        self.burnbook.remove(name)
+
 
 
 class Actor(Vedeta):

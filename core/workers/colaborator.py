@@ -16,6 +16,9 @@ class Colaborator:
 
         self.calendar = Calendar()
 
+    def get_cost(self) -> int:
+        return self.cost
+
 
     def add_appointment(self, appointment):
 

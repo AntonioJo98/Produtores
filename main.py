@@ -81,10 +81,16 @@ def register_stage():
         print("> Cenario registado.")
     except ValueError as e:    
         print(f"> {e}")
-    
+
 
 def stages():
     return topo.print_stages()
+
+def print_done():
+    return topo.print_done()
+
+def print_scheduled():
+    return topo.print_scheduled()
 
 
 def schedule():
@@ -113,6 +119,43 @@ def schedule():
         print(f"> {e}")
 
 
+def record():
+    print(f"> {topo.record()}")
+
+
+def print_stage_events():
+    try:
+        stage_name = input("")
+        print("> " + topo.print_tbd_stage(stage_name))
+    except ValueError as e:
+        print(f"> {e}")
+
+def print_worker_events():
+    try:
+        worker_name = input("")
+        print("> " + topo.print_tbd_colaborator(worker_name))
+    except ValueError as e:
+        print(f"> {e}")
+
+def amua():
+    try:
+        vedeta = input("")
+        colaborador = input("")
+        topo.check_amua(vedeta, colaborador)
+        suspended_recordings = topo.amua(vedeta, colaborador)
+        print(f"> {vedeta} colocou {colaborador} na sua lista negra, suspendendo {suspended_recordings} gravacoes.")
+    except ValueError as e:
+        print(f"> {e}")
+
+def reconcilia():
+    try:
+        vedeta = input("")
+        colaborador = input("")
+        topo.check_reconcilia(vedeta, colaborador)
+        saved_recordings = topo.reconcilia(vedeta, colaborador)
+        print(f"> {vedeta} <3 {colaborador}. {saved_recordings} gravacoes salvas!")
+    except ValueError as e:
+        print(f"> {e}")
 
 def resolve_cmd(cmd:str):
 
@@ -133,6 +176,20 @@ def resolve_cmd(cmd:str):
         print("> " + stages())
     elif cmd == 'marca':
         schedule()
+    elif cmd == "realizadas":
+        print("> " + print_done())
+    elif cmd == "previstas":
+        print("> " + print_scheduled())
+    elif cmd == "grava":
+        record()
+    elif cmd == "local":
+        print_stage_events()
+    elif cmd == "colaborador":
+        print_worker_events()
+    elif cmd == "amua":
+        amua()
+    elif cmd == "reconcilia":
+        reconcilia()
     else:
        print("Opcao inexistente.")
 
