@@ -179,12 +179,88 @@ class Application:
         for colab in colabs:
             if self.colabs.get(colab, None) is None:
                 raise ValueError("Colaborador desconhecido.")
-    
+            
+        result = self._conflicts(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
+
+        if isinstance(result, list):
+            for event in result:
+               self._reschedule(event)
+            return True
+        else: 
+            if result:
+                raise ValueError("Gravacao nao agendada por conflito de datas.")
+        
+        return False
+
+
+    def _conflicts(self, start:datetime.datetime, duration:int, stage_name:str, producer_name:str, director_name:str, tech_name:str, colabs:List[str]):
+        
+        reschedules = [] # in the case the producer is senior, there can be a number of reschedules to be made
+        
+        stage = self.stages[stage_name]
+        stage_calendar = stage.calendar
+        event_in_conflict = stage_calendar.is_free(start, duration)
+
+        for event in event_in_conflict:
+            producer_conflict_name = event.producer_name
+            producer_conflict = self.colabs[producer_conflict_name]
+            new_producer = self.colabs[producer_name]
+            if isinstance(producer_conflict, Junior) and isinstance(new_producer, Senior):
+                if event not in reschedules:
+                    reschedules.append(event) # reschedule
+            else:
+                return True # there's a conflict and, thus, this event cannot be scheduled
+        
+        workers = [producer_name, director_name, tech_name] + colabs
+        for worker_name in workers:
+            worker_calendar = self.colabs[worker_name].calendar
+            event_in_conflict = worker_calendar.is_free(start, duration)
+
+            for event in event_in_conflict:
+                producer_conflict_name = event.producer_name
+                producer_conflict = self.colabs[producer_conflict_name]
+                new_producer = self.colabs[producer_name]
+                if isinstance(producer_conflict, Junior) and isinstance(new_producer, Senior):
+                    if event not in reschedules:
+                        reschedules.append(event) # reschedule
+                else:
+                    return True # there's a conflict and, thus, this event cannot be scheduled
+
+        if len(reschedules) > 0:
+           return reschedules # return the list of events to be rescheduled
+        return False # there's no conflict and, thus, this event can be scheduled
+
+
+    def _reschedule(self, event:Event) -> None:
+        current_day = event.start + datetime.timedelta(days=0)
+        event_duration = event.duration
+
+        event_stage = self.stages[event.stage_name]
+        event_workers = [event.producer_name, event.director_name, event.tech_name] + event.optionals
+
+        while True:
+            current_day = current_day + datetime.timedelta(days=1)
+
+            booked = event_stage.calendar.is_free(current_day, event_duration)
+            if len(booked) > 0:
+                continue
+
+            for worker_name in event_workers:
+                worker = self.colabs[worker_name]
+                booked = worker.calendar.is_free(current_day, event_duration)
+                if len(booked) > 0:
+                    break
+
+            if len(booked) == 0:
+                break
+
+        event.start = current_day
+
     
     def schedule(self, date:datetime.datetime, 
                  duration:int, 
                  stage_name:str, producer_name:str, director_name:str, tech_name:str, 
-                 colabs:List[str]):
+                 colabs:List[str]) -> bool:
         
         event = Event(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
         event.define_cost(self._calc_event_cost(event))
@@ -192,11 +268,18 @@ class Application:
         event_workers = [producer_name, director_name, tech_name] + colabs
         
         for worker_name in event_workers:
-            self.colabs[worker_name].calendar.add_event(event)
-        
-        self.stages[stage_name].calendar.add_event(event)
+            worker = self.colabs[worker_name]
+            worker.calendar.add_event(event)
+            if isinstance(worker, Vedeta) and worker.famous == "vedeta":
+                if len(worker.burnbook) != 0:
+                    for burn in worker.burnbook:
+                        if burn in event_workers:
+                            event.suspend_recording()    
 
+        self.stages[stage_name].calendar.add_event(event)
         self.tbd_calendar.add_event(event) 
+
+        return event.feud_number > 0
 
 
     def record(self):
@@ -204,15 +287,15 @@ class Application:
         if len(self.tbd_calendar) == 0:
             return "Nenhuma gravacao agendada."
         
-        date_event = next(iter(self.tbd_calendar.calendar))
+        event = next(iter(self.tbd_calendar.calendar))
         
-        event = self.tbd_calendar.pop(date_event)
+        self.tbd_calendar.pop(event)
         self.done_calendar.add_event(event)
 
         for worker_name in event.get_all_workers():
-            self.colabs[worker_name].calendar.pop(date_event)
+            self.colabs[worker_name].calendar.pop(event)
         
-        self.stages[event.stage_name].calendar.pop(date_event)
+        self.stages[event.stage_name].calendar.pop(event)
 
         if event.feud_number == 0:
             return f"{event} Gravada!"
@@ -284,3 +367,26 @@ class Application:
         if colaborador not in vedeta.burnbook or colaborador not in self.colabs:
             raise ValueError(f"Nao existe zanga com {colaborador}.")
         
+
+
+    def print_amuancos(self, vedeta_name:str) -> str:
+        vedeta:Vedeta = self.colabs[vedeta_name]
+        vedeta_burnbook = vedeta.burnbook
+
+        if len(vedeta_burnbook) == 0:
+            return f"{vedeta_name} da-se bem com todos!"
+        
+        amuancos_str =""
+        # brunbook = ["colab1", "colab2", ..., "colabk"]
+        for colaborador in vedeta_burnbook:
+            amuancos_str += colaborador + "\n"
+
+        return amuancos_str
+
+
+    def check_amuancos(self, vedeta_name:str):
+
+        vedeta = self.colabs.get(vedeta_name, None)  
+              
+        if vedeta is None or not isinstance(vedeta, Vedeta) or vedeta.famous != "vedeta":
+            raise ValueError(f"Mas quem e {vedeta_name}?")

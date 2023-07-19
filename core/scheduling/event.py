@@ -43,9 +43,9 @@ class Event:
 
     def __str__(self, include_stage=True) -> str:
         if include_stage:
-            event_str = f"{datetime.strftime(self.start, '%Y %#m %d')}; {self.stage_name}; {self.producer_name}; {self.director_name}."
+            event_str = f"{datetime.strftime(self.start, '%Y %#m %#d')}; {self.stage_name}; {self.producer_name}; {self.director_name}."
         else:
-            event_str = f"{datetime.strftime(self.start, '%Y %#m %d')}; {self.producer_name}; {self.director_name}."
+            event_str = f"{datetime.strftime(self.start, '%Y %#m %#d')}; {self.producer_name}; {self.director_name}."
 
         return event_str
     

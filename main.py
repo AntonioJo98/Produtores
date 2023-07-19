@@ -112,9 +112,15 @@ def schedule():
         colab = input("")
         colabs.append(colab)
     try:
-        topo.check_event(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
-        topo.schedule(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
-        print("> Gravacao agendada com sucesso!")
+        is_rescheduled = topo.check_event(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
+        is_pending = topo.schedule(date, duration, stage_name, producer_name, director_name, tech_name, colabs)
+        if is_rescheduled:
+            print("> Gravacao prioritaria agendada provocou mudancas noutra(s) gravacao(oes).")
+        else: 
+            if not is_pending:
+                print("> Gravacao agendada com sucesso!")
+            else:
+                print("> Gravacao pendente de uma birra.")
     except ValueError as e:
         print(f"> {e}")
 
@@ -157,6 +163,14 @@ def reconcilia():
     except ValueError as e:
         print(f"> {e}")
 
+def print_amuancos():
+    try:
+        vedeta = input("")
+        topo.check_amuancos(vedeta)
+        print("> " + topo.print_amuancos(vedeta))
+    except ValueError as e:
+        print(f"> {e}")
+
 def resolve_cmd(cmd:str):
 
     cmd = cmd.lower()
@@ -190,6 +204,8 @@ def resolve_cmd(cmd:str):
         amua()
     elif cmd == "reconcilia":
         reconcilia()
+    elif cmd == "amuancos":
+        print_amuancos()
     else:
        print("Opcao inexistente.")
 
